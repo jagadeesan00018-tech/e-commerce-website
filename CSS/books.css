@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f8f6f0;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#111;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero */
+
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url('/Assets/books\ banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:50px;
+}
+
+.hero-content p{
+    margin:15px 0;
+    font-size:18px;
+}
+
+.hero-content button{
+    padding:12px 25px;
+    border:none;
+    background:#d4a373;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+/* Search */
+
+.search-section{
+    text-align:center;
+    padding:30px;
+}
+
+.search-section input{
+    width:400px;
+    max-width:90%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Books */
+
+.books-container{
+    padding:40px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.book-card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:0.3s;
+}
+
+.book-card:hover{
+    transform:translateY(-10px);
+}
+
+.book-card img{
+    width:100%;
+    border-radius:8px;
+}
+
+.book-card h3{
+    margin:15px 0;
+}
+
+.book-card p{
+    color:#8b4513;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.cart-btn{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#4b2e2e;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.cart-btn:hover{
+    background:#8b4513;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:32px;
+}
+
+}

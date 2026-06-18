@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronics Store</title>
+    <link rel="stylesheet" href="/CSS/electronics.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Electronics</h1>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search products...">
+        </div>
+    </header>
+
+    <!-- Filter Buttons -->
+    <section class="filter-section">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mobile">Mobiles</button>
+        <button class="filter-btn" data-filter="laptop">Laptops</button>
+        <button class="filter-btn" data-filter="accessories">Accessories</button>
+    </section>
+
+    <!-- Products -->
+    <section class="products" id="products">
+
+        <div class="product-card mobile">
+            <img src="/Assets/Apple iPhone 15 (256 GB).jpg" alt="i phone 15">
+            <h3>iPhone 15</h3>
+            <p>₹79,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card laptop">
+            <img src="/Assets/macbook air.jpg" alt="Macbook Air">
+            <h3>MacBook Air</h3>
+            <p>₹1,09,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card accessories">
+            <img src="/Assets/wireless headphone.jpg" alt="wireless head phone">
+            <h3>Wireless Headphones</h3>
+            <p>₹4,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card mobile">
+            <img src="/Assets/galaxy s25.jpg" alt=" Galaxy s25">
+            <h3>Samsung Galaxy S25</h3>
+            <p>₹74,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card laptop">
+            <img src="/Assets/hp pavillion.jpg" alt="hp">
+            <h3>HP Pavilion</h3>
+            <p>₹64,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product-card accessories">
+            <img src="/Assets/smart watch.jpg" alt="smart watch">
+            <h3>Smart Watch</h3>
+            <p>₹2,999</p>
+            <button>Add to Cart</button>
+        </div>
+
+    </section>
+
+<script src="/Scripts/electronics.js"></script>
+</body>
+</html>

@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f7f7f7;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#111;
+    color:#fff;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#f4b400;
+}
+
+.nav-links{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+}
+
+
+/* Hero */
+
+.hero{
+    height:60vh;
+    background:linear-gradient(rgba(0,0,0,.5),
+    rgba(0,0,0,.5)),
+    url('/Assets/accessories\ banner.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    color:white;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    font-size:20px;
+    margin-bottom:20px;
+}
+
+.hero-content button{
+    padding:12px 25px;
+    border:none;
+    background:#f4b400;
+    color:black;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* Search */
+
+.search-section{
+    text-align:center;
+    padding:30px;
+}
+
+.search-section input{
+    width:400px;
+    max-width:90%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Products */
+
+.products{
+    padding:40px 8%;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:white;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+}
+
+.product-card img{
+    width:100%;
+    border-radius:10px;
+}
+
+.product-card h3{
+    margin:15px 0;
+}
+
+.product-card p{
+    font-size:20px;
+    color:#f4b400;
+    font-weight:bold;
+}
+
+.cart-btn{
+    margin-top:10px;
+    padding:10px 20px;
+    border:none;
+    background:#222;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.cart-btn:hover{
+    background:#f4b400;
+    color:black;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+.nav-links{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:32px;
+}
+
+}
